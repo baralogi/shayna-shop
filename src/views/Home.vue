@@ -3,6 +3,7 @@
     <Header />
     <Hero />
     <SliderItem />
+    <Instagram />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Header from "@/components/Header.vue";
 import Hero from "@/components/Hero.vue";
 import SliderItem from "@/components/SliderItem.vue";
+import Instagram from "@/components/Instagram.vue";
 
 export default {
   name: "Home",
@@ -18,6 +20,7 @@ export default {
     Header,
     Hero,
     SliderItem,
+    Instagram,
   },
 };
 </script>
