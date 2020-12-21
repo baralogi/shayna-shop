@@ -5,6 +5,7 @@
     <SliderItem />
     <Instagram />
     <PartnerLogo />
+    <Footer />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Hero from "@/components/Hero.vue";
 import SliderItem from "@/components/SliderItem.vue";
 import Instagram from "@/components/Instagram.vue";
 import PartnerLogo from "@/components/PartnerLogo.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
@@ -24,6 +26,7 @@ export default {
     SliderItem,
     Instagram,
     PartnerLogo,
+    Footer,
   },
 };
 </script>
