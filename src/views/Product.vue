@@ -24,7 +24,11 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="product-pic-zoom">
-                  <img class="product-big-img" :src="image_default" alt="image_default" />
+                  <img
+                    class="product-big-img"
+                    :src="image_default"
+                    alt="image_default"
+                  />
                 </div>
                 <div class="product-thumbs">
                   <Carousel
@@ -32,19 +36,43 @@
                     :dots="false"
                     :nav="false"
                   >
-                    <div class="pt" @click="changeImage(image_collection[0])" :class="image_collection[0] == image_default ? 'active' : '' ">
+                    <div
+                      class="pt"
+                      @click="changeImage(image_collection[0])"
+                      :class="
+                        image_collection[0] == image_default ? 'active' : ''
+                      "
+                    >
                       <img src="img/mickey1.jpg" alt="" />
                     </div>
 
-                    <div class="pt" @click="changeImage(image_collection[1])" :class="image_collection[1] == image_default ? 'active' : '' ">
+                    <div
+                      class="pt"
+                      @click="changeImage(image_collection[1])"
+                      :class="
+                        image_collection[1] == image_default ? 'active' : ''
+                      "
+                    >
                       <img src="img/mickey2.jpg" alt="" />
                     </div>
 
-                    <div class="pt" @click="changeImage(image_collection[2])" :class="image_collection[2] == image_default ? 'active' : '' ">
+                    <div
+                      class="pt"
+                      @click="changeImage(image_collection[2])"
+                      :class="
+                        image_collection[2] == image_default ? 'active' : ''
+                      "
+                    >
                       <img src="img/mickey3.jpg" alt="" />
                     </div>
 
-                    <div class="pt" @click="changeImage(image_collection[3])" :class="image_collection[3] == image_default ? 'active' : '' ">
+                    <div
+                      class="pt"
+                      @click="changeImage(image_collection[3])"
+                      :class="
+                        image_collection[3] == image_default ? 'active' : ''
+                      "
+                    >
                       <img src="img/mickey4.jpg" alt="" />
                     </div>
                   </Carousel>
@@ -82,8 +110,10 @@
                     <h4>$495.00</h4>
                   </div>
                   <div class="quantity">
-                    <a href="shopping-cart.html" class="primary-btn pd-cart"
-                      >Add To Cart</a
+                    <router-link to="/cart"
+                      ><a href="#" class="primary-btn pd-cart"
+                        >Add To Cart</a
+                      ></router-link
                     >
                   </div>
                 </div>
@@ -113,7 +143,7 @@ export default {
     Header,
     Footer,
     Carousel,
-    RelatedItem
+    RelatedItem,
   },
   data() {
     return {
@@ -122,15 +152,15 @@ export default {
         "img/mickey1.jpg",
         "img/mickey2.jpg",
         "img/mickey3.jpg",
-        "img/mickey4.jpg"
-      ]
-    }
+        "img/mickey4.jpg",
+      ],
+    };
   },
   methods: {
     changeImage(urlImage) {
       this.image_default = urlImage;
-    }
-  }
+    },
+  },
 };
 </script>
 
